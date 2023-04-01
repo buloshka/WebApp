@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+button {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: transparent;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.center,
+.right {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 440px;
+    background-color: #464646;
+    height: 100%;
+}
+
+.left__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B2B2B;
+    width: auto;
+    padding: 10px 5px 2px 5px;
+    height: 100%;
+}
+
+.left__left__group {
+    display: flex;
+    flex-direction: column;
+    height: 444px;
+    overflow: scroll;
+}
+
+.left__left img {
+    border-radius: 60%;
+    align-self: flex-end;
+}
+
+.left__left button,
+.left__left .button__img {
+    transition: border-radius 0.2s ease;
+}
+
+.__line-big {
+    border: #8F8F8F 2px solid;
+    border-radius: 20%;
+    width: 50px;
+    margin: 3px 0 12px 0;
+}
+
+.__line-big:nth-child(4) {
+    margin-top: auto;
+}
+
+.left__left__help {
+    margin: 0;
+}
+
+.left__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left__right__center__men,
+.left__right__center__under-chat {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left__right__bottom {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #373737;
+    width: 100%;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.left__right__bottom__avatar-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.left__right__bottom__avatar,
+.left__right_center__chat__avatar {
+    border-radius: 100%;
+}
+
+.center {
+    flex: 2 1 1000px;
+    width: auto;
+    background-color: #555555;
+}
+
+.right {
+    flex: 1 1 480px;
+    width: auto;
+    background-color: #464646;
+}
+
+.left__right__center__man1,
+.left__right__center__man2,
+.left__right__center__man3,
+.center__header__files,
+.center__header__other{
+    border-radius: 0;
+}

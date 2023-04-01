@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <title>TeamFusion</title>
+</head>
+<body>
+  <div class="left">
+    <section class="left__left">
+      <form class="left__left__logo-form" method="post">
+        <button class="left__left__logo">
+          <img class="left__left__logo__img button__img" src="Icons/LogoNight.svg" alt="LogoNight">
+        </button>
+      </form>
+      <div class="__line-big"></div>
+      <div class="left__left__group">
+        <!--- Распаковка отделов --->
+        <form class="left__left__department-form" method="post">
+          <button class="left__left__department" type="button">
+            <img class="button__img avatar-error" src="Icons/Avatar.svg" alt="ОТДЕЛ">
+          </button>
+        </form>
+        <!--- Распаковка отделов --->
+      </div>
+      <div class="__line-big"></div>
+      <form class="left__left__help-form" method="post">
+        <button id="help" class="left__left__help" type="button">
+          <img class="button__img avatar-error" src="Icons/Help.svg" alt="Help">
+        </button>
+      </form>
+    </section>
+    <section class="left__right">
+      <header class="left__right__header">
+        <form class="left__right__header-form" method="post">
+          <input class="left__right__header__input with-image" type="text"
+                 id="left__right__header__search" placeholder="поиск чата" name="search_chat">
+        </form>
+      </header>
+      <div class="__line"></div>
+      <div class="left__right__center">
+        <div class="left__right__center__men">
+          <form class="left__right__center__man-form" method="post">
+            <button class="left__right__center__man1">
+              <img class="button__img" src="Icons/Man%201.svg" alt="man1">
+            </button>
+          </form>
+          <form class="left__right__center__man-form" method="post">
+            <button class="left__right__center__man2">
+              <img class="button__img" src="Icons/Man%202.svg" alt="man2">
+            </button>
+          </form>
+          <form class="left__right__center__man-form" method="post">
+            <button class="left__right__center__man3">
+              <img class="button__img" src="Icons/Man%203.svg" alt="man3">
+            </button>
+          </form>
+        </div>
+        <div class="left__right__center__under-chat">
+          <label class="left__right__center__title">
+            Личные чаты
+          </label>
+          <form class="left__right__center__plus-form" method="post">
+            <button class="left__right__center__plus">
+              <img class="button__img" src="Icons/Plus.svg" alt="Plus">
+            </button>
+          </form>
+        </div>
+        <!--- Распаковка личных чатов --->
+        <div class="left__right__center__chat-item">
+          <form class="left__right__center__chat-form" method="post">
+            <button class="left__right__center__chat">
+              <img class="left__right_center__chat__avatar button__img avatar-error" src="Icons/Avatar.svg" alt="Avatar">
+            </button>
+          </form>
+        </div>
+        <!--- Распаковка личных чатов --->
+      </div>
+      <div class="left__right__bottom">
+        <div class="left__right__bottom__avatar-div">
+          <img class="left__right__bottom__avatar avatar-error" src="Icons/Avatar.svg" alt="Аватар профиля">
+        </div>
+        <label class="left__right__bottom__info">
+          ФИО <br><span class="__ID">#ID</span>
+        </label>
+        <form class="left__right__bottom__settings-form" method="post">
+          <button class="left__right__bottom__settings">
+            <img class="button__img" src="Icons/Settings.svg" alt="астройки">
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <div class="center">
+    <header class="center__header">
+      <form class="center__header__files-form" method="post">
+        <button class="center__header__files">
+          <img class="button__img" src="Icons/Document.svg" alt="Медиафайлы">
+        </button>
+      </form>
+      <form class="center__header__other-form" method="post">
+        <button class="center__header__other">
+          <img class="button__img" src="Icons/Other.svg" alt="Иное">
+        </button>
+      </form>
+      <div class="__line"></div>
+    </header>
+    <section class="center__chat">
+      <!--- Общение с кем-то --->
+      <label class="center__chat__greeting">Начало сотрудничесства с коллгкой ААА</label>
+      <!--- Общение с кем-то --->
+      <!--- Дата общения --->
+      <div class="center__chat__date-with-line">
+        <div class="__line-other"></div>
+        <label class="center__chat__date">12.12.1212</label>
+      </div>
+      <!--- Дата общения --->
+      <!--- Блок чата одного из пользователей(выгружать) --->
+      <div class="center__chat__block">
+        <img class="avatar-error" src="Icons/Avatar.svg" alt="Аватар профиля коллеги">
+        <div class="center__chat__block__text">
+          <label class="__text-name-1">ФИО</label>
+          <label class="__text-name-2">12.12.1212</label>
+          <label class="__text-name-3">FFFFFFFFFFFFFFFFFFFFFFFFF</label>
+        </div>
+      </div>
+      <!--- Блок чата одного из пользователей(выгружать) --->
+      <div class="center__chat__textarea">
+        <section class="center__chat__textarea-1">
+          <div class="center__chat__textarea-block">
+            <form class="center__chat__textarea-1__text-form" method="post">
+              <textarea class="center__chat__textarea-1__text" placeholder="начать писать сообщение" name="text_chat"></textarea>
+            </form>
+            <form class="center__chat__textarea-1__button-form" method="post">
+              <button class="center__chat__textarea-1__button">
+                <img class="button__img" src="Icons/AntiPlus.svg" alt="Файл">
+              </button>
+            </form>
+          </div>
+        </section>
+        <section class="center__chat__textarea-2">
+          <!--- Выгрузка прикрепленных файлов --->
+        </section>
+      </div>
+    </section>
+  </div>
+  <div class="right">
+    <header class="right__header">
+      <form class="left__right__header-form" method="post">
+        <input class="right__header__input with-image" type="text"
+               id="right__header__search" placeholder="поиск чата" name="search_chat">
+      </form>
+    </header>
+    <div class="__line"></div>
+    <div class="right__bottom">
+      <div class="right__bottom__bottom">
+        <img class="right__bottom__bottom__avatar" src="Icons/Avatar.svg" alt="Аватарка коллеги">
+        <div class="right__bottom__bottom__profile">
+          <label class="right__bottom__bottom__main">ОФИСНЫЙ РАБОТНИК</label>
+          <label class="right__bottom__bottom__info">
+            ФИО <span class="__ID">#ID</span>
+          </label>
+          <div class="__line-other"></div>
+          <label class="right__bottom__bottom__date">
+            С нами с 12.12.1212
+          </label>
+          <div class="__line-other"></div>
+        </div>
+        <div class="right__bottom_bottom__servers">
+          <label class="__info">
+            2 - общие сервера
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
