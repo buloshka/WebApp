@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent; /* Chrome, Safari, Edge */
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    user-select: none;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+button {
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    border: transparent;
+    border-radius: 50%;
+    outline: none;
+    cursor: default;
+}
+
+.left__right__header-form,
+.right__header-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left__right__header-form,
+.right__header-form {
+    display: flex;
+    align-items: center;
+}
+
+input, textarea {
+    user-select: text;
+}
+
+input {
+    margin: 0;
+    outline: none;
+    background-color: #333;
+    border-radius: 5px;
+    color: #D3D3D3;
+    padding: 5px 10px 5px 25px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    align-self: center;
+}
+
+input::selection,
+textarea::selection {
+    background-color: #6539af;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #844be7;
+}
+
+input:hover,
+textarea:hover {
+    border-color: rgba(132, 75, 231, 0.5);
+}
+
+input:hover:focus,
+textarea:hover:focus {
+    border-color: #844be7;
+}
+
+input:focus:active,
+textarea:focus:active {
+    border-color: #844BE7;
+}
+
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+    border-color: transparent;
+}
+
+.center,
+.right {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 440px;
+    background-color: #464646;
+    height: 100%;
+}
+
+.center {
+    flex: 2 1 1000px;
+    width: auto;
+    background-color: #555555;
+}
+
+.right {
+    flex: 1 1 480px;
+    width: auto;
+    background-color: #464646;
+}
+
+.__line {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #2B2B2B;
+    box-sizing: border-box;
+}
+
+.left__right__center__man1,
+.left__right__center__man2,
+.left__right__center__man3,
+.center__header__files,
+.center__header__other{
+    border-radius: 0;
+}

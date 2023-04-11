@@ -1,0 +1,241 @@
+.center__header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 10px;
+
+}
+
+.center__header__files-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.center__header__files {
+    margin-top: 3px;
+}
+
+.center__header__other-form,
+.center__header__other,
+.center__header__other img{
+    width: 40px;
+    height: 54px
+}
+
+.center__header__other-form {
+    margin-left: auto;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    background-color: #555555;
+    opacity: 0;
+    visibility: hidden;
+    border: #2B2B2B solid 2px;
+    border-radius: 15px;
+    padding-top: 50px;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dropdown-menu li:hover {
+    background-color: #656565;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.center__chat {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.center__chat-container {
+    position: relative;
+    height: 500px;
+    width: 90%;
+}
+
+#chat-block {
+    height: 100%;
+    overflow: scroll;
+}
+
+.center__chat__date {
+    margin: 0 8px;
+}
+
+.center__chat__date-with-line {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center__chat__greeting {
+    margin: 0 auto;
+}
+
+.__line-other {
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    height: 3px;
+    background-color: #949494;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.__line-other:nth-child(1) {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.__line-other:nth-child(3) {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.center__chat__block {
+    margin-top: 25px;
+    display: flex;
+}
+
+.center__chat__block img {
+    border-radius: 50%;
+    overflow: auto;
+}
+
+.center__chat__block__text {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.__text-name-3 {
+    margin-top: 10px;
+}
+
+.center__chat__date-with-line,
+.center__chat__greeting,
+.center__chat__block {
+    flex-shrink: 0;
+}
+
+.center__chat__textarea {
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 1;
+    background-color: #555555;
+}
+
+.center__chat__textarea-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.center__chat__textarea-1__text-form {
+    width: 500px;
+    min-height: 25px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.center__chat__textarea-1__text {
+    width: 100%;
+    min-height: 25px;
+    max-height: 90px;
+    overflow: auto;
+    resize: none;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    transition: border-color 0.3s ease;
+    outline: none;
+    background-color: #333;
+    border-radius: 5px;
+    color: #D3D3D3;
+    border: 2px solid transparent;
+    padding: 4px 4px 4px 6px;
+    line-height: 1.4;
+
+}
+
+.center__chat__textarea-1__text:focus {
+    border-color: #844be7;
+}
+
+.center__chat__textarea-1__text:hover {
+    border-color: rgba(132, 75, 231, 0.5);
+}
+
+.center__chat__textarea-1__text:hover:focus {
+    border-color: #844be7;
+}
+
+.center__chat__textarea-1__text:focus:active {
+    border-color: #844be7;
+}
+
+.center__chat__textarea-1__text:focus:not(:focus-visible) {
+    border-color: transparent;
+}
+
+.center__chat__textarea-2 {
+    height: 28px;
+}
+
+#file {
+    display: flex;
+    align-items: center;
+    height: 28px;
+}
+
+#file-cancel-form {
+    height: 27px;
+    width: 27px;
+    margin-left: 10px;
+}
+
+#file-cancel {
+    border: transparent solid 3px;
+    height: 23px;
+    width: 23px;
+}
+
+#file-img {
+    transform: rotate(45deg);
+    height: 20px;
+}
